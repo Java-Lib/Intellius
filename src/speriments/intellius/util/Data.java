@@ -6,7 +6,7 @@ public class Data {
 		return data;
 	}
 	
-	public String name = "";
+	public String name = null;
 	public void setProjectName(String name) {
 		if (name.equalsIgnoreCase(null)) {
 			this.name = null;
