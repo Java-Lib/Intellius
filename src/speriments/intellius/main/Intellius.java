@@ -5,6 +5,8 @@ import org.bukkit.Server;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import speriments.intellius.util.Logfile;
+
 public class Intellius extends JavaPlugin {
 	public static final String PROJECT = "Intellius";
 	public static final String AUTHOR = "Speriments";
@@ -19,11 +21,15 @@ public class Intellius extends JavaPlugin {
 	
 	@Override
 	public void onEnable() {
-		
+		Logfile.info("{PROJECT} by {AUTHOR} was loaded."
+		       .replace("{PROJECT}", PROJECT)
+		       .replace("{AUTHOR}", AUTHOR));
 	}
 	
 	@Override
 	public void onDisable() {
-		
+		Logfile.info("{PROJECT} by {AUTHOR} was unloaded."
+		       .replace("{PROJECT}", PROJECT)
+		       .replace("{AUTHOR}", AUTHOR));		
 	}
 }
