@@ -7,7 +7,7 @@ public class Data {
 	}
 	
 	public String name = "";
-	public void setName(String name) {
+	public void setProjectName(String name) {
 		if (name.equalsIgnoreCase(null)) {
 			this.name = null;
 		} else {
@@ -15,7 +15,7 @@ public class Data {
 		}
 	}
 	
-	public String getName() {
+	public String getProjectName() {
 		return name;
 	}
 }
