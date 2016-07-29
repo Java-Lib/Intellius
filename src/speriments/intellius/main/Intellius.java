@@ -5,6 +5,7 @@ import org.bukkit.Server;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import speriments.intellius.util.Data;
 import speriments.intellius.util.Logfile;
 
 public class Intellius extends JavaPlugin {
@@ -24,12 +25,20 @@ public class Intellius extends JavaPlugin {
 		Logfile.info("{PROJECT} by {AUTHOR} was loaded."
 		       .replace("{PROJECT}", PROJECT)
 		       .replace("{AUTHOR}", AUTHOR));
+		if (Data.getData().getProjectName().equalsIgnoreCase(null)) {
+			Logfile.info("There is no Intellius plugins to initialize.");
+		} else {
+			Logfile.info("Initialized plugin: " + Data.getData().getProjectName());
+		}
 	}
 	
 	@Override
 	public void onDisable() {
 		Logfile.info("{PROJECT} by {AUTHOR} was unloaded."
 		       .replace("{PROJECT}", PROJECT)
-		       .replace("{AUTHOR}", AUTHOR));		
+		       .replace("{AUTHOR}", AUTHOR));
+		if (!Data.getData().getProjectName().equalsIgnoreCase(null)) {
+			Logfile.info("Uninitialized plugin: " + Data.getData().getProjectName());
+		}		
 	}
 }
