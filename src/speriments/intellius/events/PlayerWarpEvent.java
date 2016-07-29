@@ -6,9 +6,9 @@ import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
 public class PlayerWarpEvent extends Event {
-	public static Player player;
-	public static Location location;
-	public static String name;
+	public Player player;
+	public Location location;
+	public String name;
 	
 	public PlayerWarpEvent(Player player, Location location, String name) {
 		this.player = player;
