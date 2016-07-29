@@ -16,7 +16,7 @@ public class PlayerVanishEvent {
 		return player;
 	}
 	
-	public static void setVanish(Player player, boolean trueOrFalse) {
+	public void setVanish(Player player, boolean trueOrFalse) {
 		if (trueOrFalse == true) {
 			player.hidePlayer(player);
 		} else {
