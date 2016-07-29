@@ -1,5 +1,0 @@
-name: Intellius
-author: Speriments
-description: A Bukkit Library used for coding plugins.
-main: speriments.intellius.main.Intellius
-version: 1.0
