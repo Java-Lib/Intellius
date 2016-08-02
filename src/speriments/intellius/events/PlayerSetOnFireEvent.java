@@ -1,14 +1,16 @@
 package speriments.intellius.events;
 
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
+import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-public class PlayerSetOnFireEvent {
+public class PlayerSetOnFireEvent extends Event {
 	
 	public Player targetPlayer;
 	public Player sender;
 	
-        public PlayerSetOnFireEvent(Player player, Player sender) {
+        public PlayerSetOnFireEvent(Player targetPlayer, Player sender) {
 		this.targetPlayer = targetPlayer;
 		this.sender = sender;
 	}
@@ -20,16 +22,16 @@ public class PlayerSetOnFireEvent {
 	public void setOnFire(Player targetPlayer, Player sender) {
     		if (!(sender instanceof Player)) {
       			sender.sendMessage(ChatColor.RED + "Only players can set other players on fire!");
-      			return true;
+      			return;
     		}
     
     		if (targetPlayer == null) {
-      			sender.sendMessage(ChatColor.RED + targetPlayer + " is not currently online.);
-      			return true;
+      			sender.sendMessage(ChatColor.RED + "That player is not online.");
+      			return;
     		} else {
-      			sender.sendMessage(ChatColor.GREEN + targetPlayer + " has been set on fire for 60 seconds!")
-      			target.setFireTicks(1200);
-      			return true;
+      			sender.sendMessage(ChatColor.GREEN + targetPlayer.getName() + " has been set on fire for 60 seconds!");
+      			targetPlayer.setFireTicks(1200);
+      			return;
     		}
 	}
 	
