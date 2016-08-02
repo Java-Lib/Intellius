@@ -11,3 +11,8 @@ If you just want to download the latest JAR, please download it [here](https://g
 
 ### License [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
 If you want to view the project's license, please click [here](LICENSE).
+
+### More
+If you'd like to view an example, please visit [here](https://github.com/Ahrics/Example).
+Also, Intellius is still in Beta, which means that there is still some bugs that need to be fixed.
+Plus, the authors of Intellius are [Ahrics](http://bit.ly/2avooGG), [CodeError](http://bit.ly/2aKMkXv), [JavaLib](http://bit.ly/2aKMkXv), and [falceso](http://bit.ly/2aKMkXv).
