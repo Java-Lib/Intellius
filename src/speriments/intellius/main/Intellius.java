@@ -22,7 +22,6 @@ public class Intellius extends JavaPlugin {
 		return main;
 	}
 	
-	@Override
 	public void load() {
 		Logfile.info("{PROJECT} by {AUTHOR} running v{VERSION} was loaded!"
 			.replace("{PROJECT}", PROJECT)
