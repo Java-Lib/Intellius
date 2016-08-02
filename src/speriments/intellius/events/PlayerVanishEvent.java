@@ -3,7 +3,7 @@ package speriments.intellius.events;
 import org.bukkit.entity.Player;
 import org.bukkit.event.HandlerList;
 
-public class PlayerVanishEvent {
+public class PlayerVanishEvent extends Event {
 	public Player player;
 	public String vanish;
 	
