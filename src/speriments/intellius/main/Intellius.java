@@ -23,13 +23,23 @@ public class Intellius extends JavaPlugin {
 	}
 	
 	@Override
+	public void load() {
+		Logfile.info("{PROJECT} by {AUTHOR} running v{VERSION} was loaded!"
+			.replace("{PROJECT}", PROJECT)
+			.replace("{AUTHOR}", AUTHOR)
+			.replace("{VERSION}", VERSION));
+	}
+	
+	@Override
 	public void onEnable() {
-		Logfile.info("{PROJECT} by {AUTHOR} running v{VERSION} was loaded."
+		Logfile.info("{PROJECT} by {AUTHOR} running v{VERSION} was enabled!"
 		       .replace("{PROJECT}", PROJECT)
 		       .replace("{AUTHOR}", AUTHOR)
 		       .replace("{VERSION}", VERSION));
 		if (Data.getData().getProjectName().equalsIgnoreCase(null)) {
-			Logfile.info("There are no Intellius plugins to initialize.");
+			Logfile.severe("There are no Intellius plugins to initialize!");
+			Logfile.severe("Disabling Intellius v{VERSION}...".replace("{VERSION}", VERSION));
+			onDisable();
 		} else {
 			Logfile.info("Initialized plugin: " + Data.getData().getProjectName());
 		}
@@ -37,7 +47,7 @@ public class Intellius extends JavaPlugin {
 	
 	@Override
 	public void onDisable() {
-		Logfile.info("{PROJECT} by {AUTHOR} running v{VERSION} was unloaded."
+		Logfile.info("{PROJECT} by {AUTHOR} running v{VERSION} was disabled!"
 		       .replace("{PROJECT}", PROJECT)
 		       .replace("{AUTHOR}", AUTHOR)
 		       .replace("{VERSION}", VERSION));
