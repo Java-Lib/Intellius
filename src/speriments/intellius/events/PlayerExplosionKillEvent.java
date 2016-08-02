@@ -1,15 +1,17 @@
 package speriments.intellius.events;
 
+import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
+import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-public class PlayerExplosionKillEvent {
+public class PlayerExplosionKillEvent extends Event {
   	
   	public Player targetPlayer;
   	public Player sender;
   	public float explosionPower = 4F;
 	
-	public PlayerExplosionKillEvent(Player player, Player sender, float explosionPower) {
+	public PlayerExplosionKillEvent(Player targetPlayer, Player sender, float explosionPower) {
 		this.targetPlayer = targetPlayer;
 		this.sender = sender;
 		this.explosionPower = explosionPower;
@@ -22,17 +24,17 @@ public class PlayerExplosionKillEvent {
 	public void killPlayer(Player targetPlayer, Player sender, float explosionPower) {
     		if (!(sender instanceof Player)) {
       			sender.sendMessage(ChatColor.RED + "Only players can kill other players!");
-      			return true;
+      			return;
     		}
     
-    		if (target == null) {
-      			sender.sendMessage(ChatColor.RED + targetPlayer + " is not currently online.");
-      			return true;
+    		if (targetPlayer == null) {
+      			sender.sendMessage(ChatColor.RED + "That player is not online.");
+      			return;
     		} else {
             		targetPlayer.getWorld().createExplosion(targetPlayer.getLocation(), explosionPower);
       			targetPlayer.setHealth(0.0D);
-      			sender.sendMessage(ChatColor.GREEN + targetPlayer + " has been killed by an explosion!");
-      			return true; 
+      			sender.sendMessage(ChatColor.GREEN + targetPlayer.getName() + " has been killed by an explosion!");
+      			return; 
     		}
 	}
 	
