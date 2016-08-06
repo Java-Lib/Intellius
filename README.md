@@ -13,6 +13,6 @@ If you just want to download the latest JAR, go [here](https://github.com/Wylion
 If you want to view the project's license, please click [here](LICENSE).
 
 ### More
-If you'd like to view an example, please visit [here]().
+If you'd like to view an example, please visit [here](https://github.com/Wylion/Intellius).
 Also, Intellius is still in Beta, which means that there is still some bugs that need to be fixed.
 The authors of Intellius are [Speriment](http://bit.ly/2aGTj2W), [CodeError](http://bit.ly/2auJB08), [JavaLib](http://bit.ly/2aP3mAv), and [falceso](http://bit.ly/2b3Pow5).
