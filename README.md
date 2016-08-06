@@ -7,12 +7,12 @@ More projects will be created after Intellius has been finished.
 
 ### Downloads
 To download latest/previous JAR file for using it as a library, go [here](https://github.com/Wylion/Intellius/releases).
-If you just want to download the latest JAR, please download it [here](https://github.com/Wylion/Intellius/releases/latest).
+If you just want to download the latest JAR, go [here](https://github.com/Wylion/Intellius/releases/latest).
 
 ### License [![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
 If you want to view the project's license, please click [here](LICENSE).
 
 ### More
-If you'd like to view an example, please visit [here](https://github.com/Ahrics/Example).
+If you'd like to view an example, please visit [here]().
 Also, Intellius is still in Beta, which means that there is still some bugs that need to be fixed.
-Plus, the authors of Intellius are [Ahrics](http://bit.ly/2avooGG), [CodeError](http://bit.ly/2aKMkXv), [JavaLib](http://bit.ly/2aKMkXv), and [falceso](http://bit.ly/2aKMkXv).
+The authors of Intellius are [Speriment](http://bit.ly/2aGTj2W), [CodeError](http://bit.ly/2auJB08), [JavaLib](http://bit.ly/2aKMkXv), and [falceso](http://bit.ly/2aKMkXv).
