@@ -1,17 +1,17 @@
-package speriments.intellius.main;
+package wylion.intellius.main;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Server;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import speriments.intellius.util.Data;
-import speriments.intellius.util.Logfile;
+import wylion.intellius.util.Data;
+import wylion.intellius.util.Logfile;
 
 public class Intellius extends JavaPlugin {
 	
 	public static final String PROJECT = "Intellius";
-	public static final String AUTHOR = "Speriments";
+	public static final String AUTHOR = "Wylion";
 	public static final String VERSION = "1.0";
 	public static final String DESCRIPTION = "A Bukkit Library used for coding plugins.";
 	public static final Server server = Bukkit.getServer();

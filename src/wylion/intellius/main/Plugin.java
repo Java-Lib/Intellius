@@ -1,4 +1,4 @@
-package speriments.intellius.main;
+package wylion.intellius.main;
 
 public interface Plugin {
 	abstract public void onEnable();
