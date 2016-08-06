@@ -1,6 +1,7 @@
-package speriments.intellius.events;
+package wylion.intellius.events;
 
 import org.bukkit.entity.Player;
+import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
 public class PlayerVanishEvent extends Event {

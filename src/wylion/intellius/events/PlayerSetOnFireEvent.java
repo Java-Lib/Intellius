@@ -1,4 +1,4 @@
-package speriments.intellius.events;
+package wylion.intellius.events;
 
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
