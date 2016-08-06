@@ -2,4 +2,4 @@ name: Intellius
 author: Wylion
 description: A Bukkit Library used for coding plugins.
 main: wylion.intellius.main.Intellius
-version: 1.0
+version: 1.0#-BETA
