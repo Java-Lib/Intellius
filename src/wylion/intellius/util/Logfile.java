@@ -1,9 +1,9 @@
-package speriments.intellius.util;
+package wylion.intellius.util;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import speriments.intellius.main.Intellius;
+import wylion.intellius.main.Intellius;
 
 public class Logfile {
 	public static final Logger logger = Logger.getLogger("Minecraft");

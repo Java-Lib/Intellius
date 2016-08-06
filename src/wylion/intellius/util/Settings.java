@@ -1,4 +1,4 @@
-package speriments.intellius.util;
+package wylion.intellius.util;
 
 import java.io.File;
 import java.io.IOException;

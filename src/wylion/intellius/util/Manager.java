@@ -1,4 +1,4 @@
-package speriments.intellius.util;
+package wylion.intellius.util;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Server;

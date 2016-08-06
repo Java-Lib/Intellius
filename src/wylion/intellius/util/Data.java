@@ -1,4 +1,4 @@
-package speriments.intellius.util;
+package wylion.intellius.util;
 
 public class Data {
 	public static Data data;

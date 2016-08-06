@@ -1,4 +1,4 @@
-package speriments.intellius.util;
+package wylion.intellius.util;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -6,7 +6,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import speriments.intellius.main.Intellius;
+import wylion.intellius.main.Intellius;
 
 public class Utility {
     public static String colorify(String messageToConvert) {

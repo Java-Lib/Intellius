@@ -1,4 +1,4 @@
-package speriments.intellius.util;
+package wylion.intellius.util;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
