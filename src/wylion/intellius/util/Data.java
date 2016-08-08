@@ -1,4 +1,4 @@
-package speriments.intellius.util;
+package wylion.intellius.util;
 
 public class Data {
 	public static Data data;
@@ -6,8 +6,8 @@ public class Data {
 		return data;
 	}
 	
-	public String name = "";
-	public void setName(String name) {
+	public String name = null;
+	public void setProjectName(String name) {
 		if (name.equalsIgnoreCase(null)) {
 			this.name = null;
 		} else {
@@ -15,7 +15,7 @@ public class Data {
 		}
 	}
 	
-	public String getName() {
+	public String getProjectName() {
 		return name;
 	}
 }
